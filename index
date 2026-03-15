@@ -2,49 +2,400 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Apex Dimension | Team 11211</title>
-<link rel="stylesheet" href="css/style.css">
-<script defer src="js/script.js"></script>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#0b0f1a;
+color:white;
+line-height:1.6;
+}
+
+header{
+position:fixed;
+top:0;
+width:100%;
+background:#05070f;
+padding:15px 40px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:1000;
+}
+
+header h1{
+font-size:22px;
+color:#4da3ff;
+}
+
+nav a{
+margin-left:25px;
+text-decoration:none;
+color:white;
+font-weight:bold;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#4da3ff;
+}
+
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:linear-gradient(135deg,#0b0f1a,#1b3b7a);
+padding:20px;
+}
+
+.hero h2{
+font-size:60px;
+margin-bottom:10px;
+}
+
+.hero p{
+font-size:20px;
+margin-bottom:20px;
+}
+
+button{
+padding:12px 25px;
+border:none;
+background:#4da3ff;
+color:white;
+font-size:16px;
+border-radius:6px;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+background:#2a74d6;
+}
+
+section{
+padding:100px 10%;
+}
+
+.section-title{
+font-size:40px;
+margin-bottom:30px;
+text-align:center;
+color:#4da3ff;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:#141a2a;
+padding:25px;
+border-radius:10px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-6px);
+background:#1d2540;
+}
+
+.team-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+}
+
+.member{
+background:#141a2a;
+padding:20px;
+border-radius:10px;
+text-align:center;
+}
+
+.member img{
+width:100%;
+border-radius:8px;
+margin-bottom:10px;
+}
+
+footer{
+background:#05070f;
+padding:40px;
+text-align:center;
+}
+
+footer p{
+opacity:.7;
+}
+
+</style>
 </head>
+
 
 <body>
 
 <header>
-<h1>Apex Dimension</h1>
-<p>FIRST Robotics Team 11211</p>
+<h1>Apex Dimension 11211</h1>
 
 <nav>
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="outreach.html">Outreach</a>
-<a href="resources.html">Resources</a>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#outreach">Outreach</a>
+<a href="#resources">Resources</a>
+<a href="#team">Team</a>
+<a href="#sponsors">Sponsors</a>
+<a href="#contact">Contact</a>
 </nav>
 </header>
 
-<section class="hero">
-<h2>Engineering the Future</h2>
-<p>Welcome to Apex Dimension — Team 11211.</p>
-<button onclick="joinTeam()">Join the Team</button>
+
+<section id="home" class="hero">
+
+<h2>Apex Dimension</h2>
+<p>FIRST Robotics Team 11211</p>
+
+<button onclick="joinTeam()">Join Our Team</button>
+
 </section>
 
-<section class="news">
-<h2>Latest Updates</h2>
+
+<section id="about">
+
+<h2 class="section-title">About Us</h2>
+
+<div class="cards">
 
 <div class="card">
-<h3>Build Season</h3>
-<p>Our team is preparing for the next robotics competition.</p>
+<h3>Our Mission</h3>
+<p>
+Apex Dimension Team 11211 inspires students through robotics,
+engineering, and teamwork. We design, build, and program robots while
+developing leadership and STEM skills.
+</p>
 </div>
 
 <div class="card">
-<h3>Workshops</h3>
-<p>We host robotics workshops for students and teams.</p>
+<h3>What We Do</h3>
+<p>
+We participate in robotics competitions, run workshops, mentor younger
+teams, and promote STEM education in our community.
+</p>
+</div>
+
+<div class="card">
+<h3>Our Goals</h3>
+<p>
+Build innovative robots, help our community learn technology, and
+prepare students for careers in engineering and science.
+</p>
+</div>
+
 </div>
 
 </section>
+
+
+
+<section id="outreach">
+
+<h2 class="section-title">Outreach</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>STEM Workshops</h3>
+<p>
+We host robotics workshops for students and beginner teams.
+</p>
+</div>
+
+<div class="card">
+<h3>Community Events</h3>
+<p>
+Our team demonstrates robots at schools, libraries, and tech events.
+</p>
+</div>
+
+<div class="card">
+<h3>Mentorship</h3>
+<p>
+We mentor younger robotics teams and teach programming and engineering.
+</p>
+</div>
+
+</div>
+
+</section>
+
+
+
+<section id="resources">
+
+<h2 class="section-title">Resources</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Programming Guides</h3>
+<p>
+Tutorials for Java, sensors, and robotics programming.
+</p>
+</div>
+
+<div class="card">
+<h3>Design Resources</h3>
+<p>
+CAD files, drivetrain examples, and robot design tips.
+</p>
+</div>
+
+<div class="card">
+<h3>Strategy Tools</h3>
+<p>
+Scouting sheets and match strategy resources.
+</p>
+</div>
+
+</div>
+
+</section>
+
+
+
+<section id="team">
+
+<h2 class="section-title">Our Team</h2>
+
+<div class="team-grid">
+
+<div class="member">
+<img src="https://via.placeholder.com/200">
+<h4>Team Captain</h4>
+<p>Leadership</p>
+</div>
+
+<div class="member">
+<img src="https://via.placeholder.com/200">
+<h4>Lead Programmer</h4>
+<p>Software</p>
+</div>
+
+<div class="member">
+<img src="https://via.placeholder.com/200">
+<h4>Mechanical Lead</h4>
+<p>Engineering</p>
+</div>
+
+<div class="member">
+<img src="https://via.placeholder.com/200">
+<h4>Outreach Lead</h4>
+<p>Community</p>
+</div>
+
+</div>
+
+</section>
+
+
+
+<section id="sponsors">
+
+<h2 class="section-title">Sponsors</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Become a Sponsor</h3>
+<p>
+Support Apex Dimension Team 11211 and help students build robots,
+learn engineering, and compete in robotics competitions.
+</p>
+</div>
+
+<div class="card">
+<h3>Our Supporters</h3>
+<p>
+Sponsor logos and partner organizations will appear here.
+</p>
+</div>
+
+</div>
+
+</section>
+
+
+
+<section id="contact">
+
+<h2 class="section-title">Contact Us</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Email</h3>
+<p>apexdimension11211@gmail.com</p>
+</div>
+
+<div class="card">
+<h3>Location</h3>
+<p>United States</p>
+</div>
+
+<div class="card">
+<h3>Social Media</h3>
+<p>Instagram | YouTube | GitHub</p>
+</div>
+
+</div>
+
+</section>
+
+
 
 <footer>
+
 <p>© 2026 Apex Dimension Team 11211</p>
+
 </footer>
+
+
+
+<script>
+
+function joinTeam(){
+alert("Thanks for your interest in Apex Dimension Team 11211! Applications coming soon.");
+}
+
+
+window.addEventListener("scroll",function(){
+
+const header = document.querySelector("header");
+
+if(window.scrollY > 50){
+header.style.background="#000";
+}
+else{
+header.style.background="#05070f";
+}
+
+});
+
+</script>
 
 </body>
 </html>
