@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Apex Dimension | Team 11211</title>
+<link rel="stylesheet" href="css/style.css">
+<script defer src="js/script.js"></script>
+</head>
+
+<body>
+
+<header>
+<h1>Apex Dimension</h1>
+<p>FIRST Robotics Team 11211</p>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="outreach.html">Outreach</a>
+<a href="resources.html">Resources</a>
+</nav>
+</header>
+
+<section class="hero">
+<h2>Engineering the Future</h2>
+<p>Welcome to Apex Dimension — Team 11211.</p>
+<button onclick="joinTeam()">Join the Team</button>
+</section>
+
+<section class="news">
+<h2>Latest Updates</h2>
+
+<div class="card">
+<h3>Build Season</h3>
+<p>Our team is preparing for the next robotics competition.</p>
+</div>
+
+<div class="card">
+<h3>Workshops</h3>
+<p>We host robotics workshops for students and teams.</p>
+</div>
+
+</section>
+
+<footer>
+<p>© 2026 Apex Dimension Team 11211</p>
+</footer>
+
+</body>
+</html>
